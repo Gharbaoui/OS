@@ -1,13 +1,15 @@
 CC=nasm
 FLAGS=-f bin
 
-all: bootloader.bin
+all: halt_bootloader.bin
 
+display: display_bootloader.s
+	$(CC) $(FLAGS) display_bootloader.s -o display_bootloader.bin
 
-bootloader.bin : bootloader.s
-	$(CC) $(FLAGS) bootloader.s -o bootloader.bin
+halt_bootloader.bin : halt_bootloader.s
+	$(CC) $(FLAGS) halt_bootloader.s -o halt_bootloader.bin
 
 re: clean all
 
 clean:
-	rm -f bootloader.bin
+	rm -f halt_bootloader.bin display_bootloader.bin
