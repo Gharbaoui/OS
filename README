@@ -19,3 +19,11 @@
 * to print we need to use tele-type service to use it ah need to have the 
 * value 0xe and al need to have what character you want to print
 */
+
+
+/*
+* mov need the absolute location of memory but labels 
+* are relative to the programm where is loaded at first
+* place so we know that out programm is loaded at position
+* 0x7c00 so all we need is to add 0x7c00
+*/
