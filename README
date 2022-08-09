@@ -1,1 +1,4 @@
-I'm learing how to operating systems works
+/*
+* i just want to see does nasm add some headers to my code
+* use nasm without flags and use hexdump to check
+*/
