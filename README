@@ -2,3 +2,20 @@
 * i just want to see does nasm add some headers to my code
 * use nasm without flags and use hexdump to check
 */
+
+
+/*
+* i need to display one character on the screen
+* since different screens have diffetent intefaces 
+* we could search for our screen and find out how it interact with it
+* but that code will only with this type of screen 
+* here comes interrupt it's mechanism to tell the cpu to stop what 
+* doing now and do something else maybe software interrupt like 0x01
+* or hardware interrup like power button
+* at start bios load some address pointers at the start of memory (0x0)
+* and they refer to location of functions that know how to deal with screen for
+* example
+* on wiki you can find out that interrup related to screen is int 0x10
+* to print we need to use tele-type service to use it ah need to have the 
+* value 0xe and al need to have what character you want to print
+*/
