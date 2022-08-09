@@ -27,3 +27,10 @@
 * place so we know that out programm is loaded at position
 * 0x7c00 so all we need is to add 0x7c00
 */
+
+
+/*
+* it's inconvient to always calculate the exact location by adding 0x7c00
+* so we can tell the assembler [nasm] to work relative to some address
+* by using the directive [org ox7c00]
+*/
