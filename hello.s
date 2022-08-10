@@ -15,7 +15,7 @@ print:
 	jmp .exit
 
 msg:
-	db "intro to operating systems", 0
+	db "Intro to operating systems", 0
 
 
 times 510 - ($ - $$) db 0
