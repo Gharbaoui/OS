@@ -34,3 +34,17 @@
 * so we can tell the assembler [nasm] to work relative to some address
 * by using the directive [org ox7c00]
 */
+
+/*
+* in c you can make functions and call with it's params and life is easy
+* but in assembly it's more complex cuz you want way to pass params and 
+* you wanna know the address of the function and when function done need
+* some how to know where to go then and you need to save registers that
+* you are intend to use them and after you are done with them restore them back
+*/
+
+/*
+* to include functoin just use %include "file_path"
+* include it will just copy and paste in the file that use it
+*/
+
